@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Airbooking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <header class="main-header container-fullwidth">
+      <nav class="burger-nav">
+        <button class="burger" type="button">
+        <span class="visually-hidden">Menu</span>
+        </button>
+      </nav>
+      <a class="logo header-logo">Airbooking</a>
+      <a class="search" href="#"><span class="visually-hidden">Search</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+        <div class="social-list-wrapper">
+          <ul class="social-list">  
+            <li class="social-item"><a class="social-link fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li class="social-item"><a class="social-link tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+            <li class="social-item"><a class="social-link li" href="#"><span class="visually-hidden">LinkedIn</span></a></li>
+            <li class="social-item"><a class="social-link inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          </ul>
+        </div>
+        <div class="hero-content">
+            <h1 class="page-title title">A brand new hotel beyond ordinary</h1>
+            <a class="button hero-button" href="#">Explore it</a>
+            <form class="booking-form" method="POST">
+              <div class="field-wrapper">
+                <fieldset class="form-block check-in">
+                  <legend class="input-title">Check in</legend>
+                  <label class="visually-hidden" for="check-in-date">Check-in date</label>
+                  <input class="date-input" type="text" id="check-in-date" name="check-in-date" placeholder="16">
+                  <div class="select-wrapper">
+                    <label class="visually-hidden" for="check-in-month">Check-in month</label>
+                    <select class="month-select" id="check-in-month" name="check-in-month">
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June" selected>June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="form-block check-out">
+                  <legend class="input-title">Check out</legend>
+                  <label class="visually-hidden" for="check-out-date">Check-out date</label>
+                  <input class="date-input" type="text" id="check-out-date" name="check-out-date" placeholder="16">
+                  <div class="select-wrapper">
+                    <label class="visually-hidden" for="check-out-month">Check-out month</label>
+                    <select class="month-select" name="check-out-month">
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June" selected>June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="form-block guest">
+                  <legend class="input-title" >Guest</legend>
+                  <label class="visually-hidden" for="guest-qty">Number of guests (between 1 and 5)</label>
+                  <input class="guest-input " type="text" name="guest-qty" placeholder="3">
+                  <div class="select-wrapper">
+                    <label class="visually-hidden" for="guest-qty-select">Select number of guests</label>
+                    <select class="guest-select" id="guest-qty-select" name="guest-qty-select">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="more">more</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </div>
+              <button class="form-block button form-button" type="submit">Check<br> availability</button>
+            </form>
+        </div>
+    </section>
+    <section class="section our-room container">
+      <h2 class="section-title title">Our rooms</h2>
+      <ul class="room-list">
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 1</h3>
+            <img class="room-img" src="img/room1.jpg" alt="Family room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Family room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 2</h3>
+            <img class="room-img" src="img/room2.jpg" alt="Luxary room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Luxary room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 3</h3>
+            <img class="room-img" src="img/room3.jpg" alt="Single room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Single room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 4</h3>
+            <img class="room-img" src="img/room4.jpg" alt="Double room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Double room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 5</h3>
+            <img class="room-img" src="img/room5.jpg" alt="Family room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Family room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+        <li class="room-item">
+          <a class="room-item-link" href="#">
+            <h3 class="visually-hidden">Room 6</h3>
+            <img class="room-img" src="img/room6.jpg" alt="Family room from 30$" width="370">
+            <div class="room-description">
+              <span class="room-type">Family room</span>
+              <span class="room-price">from 30$</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="best-room">
+      <div class="container">
+        <h2 class="section-title title best-room-title visually-hidden">Best room</h2>
+        <img class="room-image" src="img/best-room.jpg" alt="Best room" width="870">
+        <div class="best-room-block">
+          <p class="best-room-title title">Explorer Your Best Room</p>
+          <p class="best-room-description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
+        </div>
+      </div>
+    </section>
+    <section class="services container">
+      <h2 class="section-title title">Our services</h2>
+      <ul class="services-list">
+        <li class="services-item">
+          <p class="service-title title">Restaurant</p>
+          <p class="service-description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+        </li>
+        <li class="services-item">
+          <p class="service-title title">Sports club</p>
+          <p class="service-description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+        </li>
+        <li class="services-item">
+          <p class="service-title title">Pick up</p>
+          <p class="service-description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="promo-room">
+      <h2 class="visually-hidden title section-title">Promo room</h2>
+      <div class="promo-room-img-block"></div>
+      <div class="promo-room-txt-block">
+        <p class="promo-room-title title">Find your best room here</p>
+        <div class="promo-room-description">
+        <p class="promo-room-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+        <p class="promo-room-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+        </div>
+        <a class="button promo-room-button" href="#">Read more</a>
+    </div>
+    </section>
+    <section class="review">
+      <h2 class="section-title title">From the guest</h2>
+      <article class="review-item">
+        <h3 class="visually-hidden">Clients Review</h3>
+        <p class="review-content">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <footer class="review-author">
+          <img class="author-img" src="img/guest.jpg" width="133" alt="Andrew Starus">
+          <div class="author-block">
+            <span class="author-name">Andrew Straus</span>
+            <span class="author-location">From New York, USA</span>
+          </div>
+        </footer>
+      </article>
+    </section>
+    <section class="video">
+      <div class="video-bg"></div>
+      <h2 class="visually-hidden">Video</h2>
+      <p class="video-slogan title">Keep calm and enjoy vacation</p>
+      <a class="video-play" href="#"><span class="visually-hidden">Start showreel</span></a>
+    </section>
+    <section class="news container">
+      <h2 class="section-title title">Latest news</h2>
+        <ul class="news-list">
+          <li class="news-item" tabindex="0">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          <li class="news-item" tabindex="0">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          <li class="news-item" tabindex="0">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          <li class="news-item" tabindex="0">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          <li class="news-item" tabindex="0">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          <li class="news-item">
+            <div class="item-cover">
+              <div class="cover-text">
+                <p class="news-title title">This is a slider post</p>
+                <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              </div>
+            </div>
+            <div class="item-description">
+              <p class="news-title title">This is a slider post</p>
+              <time class="news-date" datetime="2018-06-18">June 18, 2018</time>
+              <p class="news-lead">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+              <a class="button news-button" href="#">Read more</a>
+            </div>
+          </li>
+          
+        </ul>
+    </section>
+  </main>
+  <footer class="main-footer ">
+    <div class="column-wrapper container">
+      <div class="footer-column">
+        <a class="logo footer-logo">Airbooking</a>
+        <p class="footer-logo-description">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+        <p class="address-block">2345 Lyon Avenue <br>
+        Boston, MA, Massachussets</p>
+        <ul class="tel-list">
+          <li class="tel-item"><a class="tel-link" href="tel:508-960-5584">508-960-5584</a></li>
+          <li class="tel-item"><a class="tel-link" href="857-366-42-40">857-366-42-40</a></li>
+        </ul>
+      </div>
+      <div class="footer-column quick-links">
+        <span class="footer-subtitle title">Quick-links</span>
+        <div class="links-block">
+          <ul class="links-list">
+            <li class="links-item"><a class="quick-link" href="">Accomodation</a></li>
+            <li class="links-item"><a class="quick-link" href="">Food & Drinks</a></li>
+            <li class="links-item"><a class="quick-link" href="">Beach venues</a></li>
+            <li class="links-item"><a class="quick-link" href="">Amenities</a></li>
+          </ul>
+          <ul class="links-list">
+            <li class="links-item"><a class="quick-link" href="">Noordwijk</a></li>
+            <li class="links-item"><a class="quick-link" href="">Wellness</a></li>
+            <li class="links-item"><a class="quick-link" href="">Manifesto</a></li>
+          </ul>
+        </div>
+      </div>  
+      <div class="footer-column socials">
+        <span class="footer-subtitle title">Connect with us</span>
+        <ul class="social-list">
+          <li class="social-item"><a class="social-link fb" href=""><span class="visually-hidden">Facebook</span></a></li>
+          <li class="social-item"><a class="social-link tw" href=""><span class="visually-hidden ">Twitter</span></a></li>
+          <li class="social-item"><a class="social-link li" href=""><span class="visually-hidden ">LinkedIn</span></a></li>
+          <li class="social-item"><a class="social-link you" href=""><span class="visually-hidden">Youtube</span></a></li>
+          <li class="social-item"><a class="social-link inst" href=""><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="footer-copyrights">© 2018 Airbooking - All Rights Reserved</span>
+  </footer>
+</body>
+</html>
